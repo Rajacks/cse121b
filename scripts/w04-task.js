@@ -3,7 +3,7 @@
 /* Profile Object  */
 let myProfile = {  
   name: 'Raymund Antrone',
-  photo: 'images/raymund.jpg',
+  photo: 'image/Raymund.jpg',
   favoriteFoods: ['Pizza', 'adobo chicken', 'Chicken tinola', 'Pasta'],
   hobbies: ['Games', 'Web Design', 'Movies', 'Studying Scriptures', 'Playing instrument'],
   placesLived: []
