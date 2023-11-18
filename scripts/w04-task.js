@@ -27,7 +27,7 @@ myProfile.placesLived.push({
 document.querySelector('#name').textContent = myProfile.name;
 
 /* Photo with attributes */
-document.querySelector('#photo').setAttribute('src', myProfile.photo);
+
 document.querySelector('#photo').setAttribute('alt', myProfile.name);
 
 /* Favorite Foods List*/
