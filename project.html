@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE 121b | Project</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <nav>
+        <ul id="menu">
+            <li><a id="toggleMenu">&equiv;</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="w01-task.html">W1 Task</a></li>
+            <li><a href="w03-task.html">W3 Task</a></li>
+            <li><a href="w04-task.html">W4 Task</a></li>
+            <li><a href="w05-task.html">W5 Task</a></li>
+            <li><a href="project.html" class="active">Project</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Project: Programming Tasks</h1>
+    </header>
+    <main id="project">
+        <section id="section1">
+            <h2>Interest Calculator</h2>
+            <article>
+                <div>
+                    <label for="amount">Amount:</label>
+                    <input type="text" id="amount" name="amount" placeholder="40000">
+                </div>
+                <div>
+                    <label for="interest">Interest:</label>
+                    <input type="text" id="interest" name="interest" placeholder="6.25">
+                </div>
+                <div id="paymentsContainer">
+                </div>
+                <div>
+                    <label for="years">Years:</label>
+                    <input type="text" id="years" name="years" placeholder="30">
+                </div>
+                <div>
+                    <input type="button" id="calculate" value="Calculate">
+                </div>
+                <div>
+                    <label for="total">Total:</label>
+                    <input type="text" id="total" name="total" disabled>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        &copy;<span id="year"></span>2023 | Interest Calculator | CSE 121b | Final Project
+    </footer>
+    <script src="scripts/project.js"></script>
+</body>
+
+</html>
