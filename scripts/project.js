@@ -47,29 +47,3 @@ container.appendChild(labelElement);
 container.appendChild(selectElement);
 
 document.getElementById('calculate').addEventListener('click', calculateInterest);
-
-
-fetch('https://api-ninjas.com/api/interestrate')
-    .then(response => {
-        if (!response.ok) {
-            throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-        return response.json();
-    })
-    .then(data => {
-        // Assuming the JSON data has an array of interest rates
-        const interestRates = data.interestRates;
-
-        // Clear the existing paymentOptions array and push new interest rates
-        paymentOptions.splice(0, paymentOptions.length, ...interestRates);
-
-        // Update the options in the select element
-        selectElement.innerHTML = '';
-        for (let i = 0; i < paymentOptions.length; i++) {
-            const option = document.createElement("option");
-            option.value = paymentOptions[i];
-            option.textContent = paymentOptions[i];
-            selectElement.appendChild(option);
-        }
-    })
-    .catch(error => console.error('Error fetching interest rates:', error));
